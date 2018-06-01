@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">		
+		
+		<title>解决方法</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<script src="js/jquery-2.1.4.min.js" type="application/javascript"></script>
+		<script src="js/bootstrap.js" type="application/javascript"></script>
+	</head>
+	<body>
+		<div class="container">
+		<div id="top-head">
+			<div class="container">
+				<div class="row">
+					<h2 class="text-center">故障排除方法：</h2>
+				</div>
+				<div class="row">
+					<div class="alert alert-success" id="solution"></div>
+				</div>
+				<div class="row">
+					<em>问题没有解决？你可以进一步<a href="submit.html">故障申报</a></em>
+				</div>
+			</div>
+		</div>
+		</div> 
+		
+		
+		<script type="text/javascript">
+			var id = window.location.href.split("=")[1];
+			switch(id){
+				case "1":document.getElementById("solution").innerHTML
+				="检查教室供电总闸是否接通（教师总电闸在教室前门门后）";
+				case "2":document.getElementById("solution").innerHTML
+				="打开电教讲台右手侧小柜门，重启银白色WISE中控主机电源";
+			}
+		</script>
+	</body>
+</html>
